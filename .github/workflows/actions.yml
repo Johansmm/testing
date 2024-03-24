@@ -1,0 +1,25 @@
+name: Pull request workflows
+
+on:
+  pull_request:
+    branches: ["main"]
+    types: ["opened", "synchronize"]
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  flake8:
+    name: "Flake 8 style"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "📥 Fetching Repository Contents"
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: "💫 Install package dependencies"
+        run: python -m pip install flake8
+
+      - name: "🤖 Check flake8 style"
+        run: flake8 -v --count
