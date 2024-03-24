@@ -40,13 +40,14 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -55,6 +56,13 @@
   </ol>
 </details>
 <!-- END templates/02-table_contents.md -->
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+<a href="https://github.com/Johansmm/testing"> <img src="/images/screenshot.png"></a>
+
+Repository to resolve questions about github actions/pull request/workflows and others.
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -66,33 +74,6 @@ git clone https://github.com/Johansmm/testing
 
 ### Prerequisites
 Nothing to do
-
-### Installation
-1. Install the list of requirements
-
-```sh
-python -m pip install -r requirements.txt
-```
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-Another example to use:
-```python
-from libraries.dynamics import spread_zombie_dynamics as szd
-from libraries.dynamics import graph_by_default
-import datetime as dt
-import tqdm
-
-G = graph_by_default(nodes = 20)
-ini_date = dt.datetime(year = 2019, month = 8, day = 18)
-dynamic = szd(graph = G, INTIAL_DATE = ini_date)
-```
-
 
 <!-- START templates/06-roadmap.md -->
 ## Roadmap
